@@ -1,0 +1,31 @@
+name: Bug report / 问题反馈
+description: Report a reproducible issue without private text or keys.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version / 版本
+      placeholder: v0.2.0 preview
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows and target application / 系统及目标应用
+      description: Include the application version and whether it runs elevated. Do not include private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and synthetic sample / 复现步骤与合成样本
+      description: Use non-sensitive example text. Never include API keys or a settings file.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected and actual behavior / 预期与实际表现
+    validations:
+      required: true

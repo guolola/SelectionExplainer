@@ -1,0 +1,25 @@
+# Local build and verification output
+/dist/
+/work/
+/artifacts/
+/bin/
+/obj/
+*.pdb
+*.log
+*.tmp
+*.user
+.vs/
+.idea/
+.vscode/
+
+# Credentials and per-user configuration are never published
+.env
+.env.*
+settings.json
+settings.json.*
+*.pfx
+*.p12
+*.pem
+*.key
+Thumbs.db
+Desktop.ini

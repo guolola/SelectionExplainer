@@ -1,0 +1,25 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Compile and run local provider tests
+        shell: pwsh
+        run: ./build.ps1 -Test
+      - name: Preserve preview executable
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: SelectionExplainer-windows-x64
+          path: dist/SelectionExplainer.exe
+          if-no-files-found: error

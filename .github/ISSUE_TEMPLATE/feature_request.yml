@@ -1,0 +1,16 @@
+name: Feature request / 功能建议
+description: Describe the reading workflow you want to improve.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended workflow / 问题与使用流程
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior / 希望的行为
+    validations:
+      required: true

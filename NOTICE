@@ -1,0 +1,16 @@
+SelectionExplainer
+Copyright 2026 guolola
+
+Licensed under the Apache License, Version 2.0.
+
+The repository presentation follows the owner's SoftJL repository structure:
+https://github.com/guolola/SoftJL
+SoftJL application code and product features are not included.
+
+The original SelectionExplainer logo was generated with the built-in imagegen
+tool for this project. See docs/brand/README.md for asset provenance.
+
+Windows, .NET Framework, WinForms, and UI Automation are Microsoft technologies.
+The application uses the installed Windows/.NET Framework runtime; it does not
+redistribute that runtime. Provider names identify compatible services and do
+not imply endorsement. The Apache-2.0 license does not grant trademark rights.
